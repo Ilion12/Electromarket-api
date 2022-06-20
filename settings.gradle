@@ -1,0 +1,3 @@
+rootProject.name = 'Electromarket'
+
+includeFlat 'Electromarket-lib'

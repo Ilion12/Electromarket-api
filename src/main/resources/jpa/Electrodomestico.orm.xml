@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+			     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			     xsi:schemaLocation="http://xmls.jcp.org/xml/ns/persistence/orm 
+			     				     http://xmls.jcp.org/xml/ns/persistence/orm_1_0.xsd"
+			     version="2.2">
+			     
+    <mapped-superclass class="es.electromarket.Electrodomestico" access="FIELD">
+        <attributes>
+			<id name="id">
+				<generated-value strategy ="IDENTITY"/>
+            </id>
+        	<basic name="marca" optional="false" >
+				<column name="MARCA" length="32 "/>
+            </basic>
+			<basic name="modelo" optional="false" >
+				<column name="MODELO" length="32 "/>
+            </basic>
+			<basic name="calificacionEnergetica" optional="false" >
+				<column name="CALIF_ENERG" />
+            </basic>
+			<basic name="precio" optional="false" >
+				<column name="PRECIO" />
+            </basic>
+        </attributes>
+    </mapped-superclass>
+</entity-mappings>
